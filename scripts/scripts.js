@@ -25,10 +25,10 @@ const check_sum = (a, b) => a + b
 
 //КАК ДЕЛАЕТ Прогоняем функцию по циклу несколько раз, передавая функцию, функцию проверки,
 //функцию для изменения аргументов, массив аргументов, количество повторов
-const repeatCheck = (func, checkfunc, modfunc, arguments, rep) => {
+const repeatCheck = (func, checkfunc, modfunc, argum, rep) => {
 	
 	for(let i = 0; i < rep; i++){
-		const args = arguments.map(modfunc)
+		const args = argum.map(modfunc)
 		expect(func(...args)).toBe(checkfunc(...args))	
 	}	
 }
