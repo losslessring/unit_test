@@ -14,17 +14,7 @@ function expect(value) {
 	}
 }
 
-//const sum = (a, b) => a + b
 
-//expect(sum(3, 2)).toBe(5)
-
-
-// for(let i = 0; i< 10;i++){
-// 	let a = Math.floor(Math.random() * i)
-// 	let b = Math.floor(Math.random() * i)
-// 	console.log(a, b)
-// 	expect(sum(a, b)).toBe(a + b)	
-// }
 
 const sum = (a, b) => a + b
 const check_sum = (a, b) => a + b 
