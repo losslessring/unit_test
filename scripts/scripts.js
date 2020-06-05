@@ -1,3 +1,6 @@
+
+//Функция проверки
+
 function expect(value) {
 	return {
 		toBe: exp => {
@@ -11,7 +14,7 @@ function expect(value) {
 	}
 }
 
-const sum = (a, b) => a + b
+//const sum = (a, b) => a + b
 
 //expect(sum(3, 2)).toBe(5)
 
@@ -23,9 +26,14 @@ const sum = (a, b) => a + b
 // 	expect(sum(a, b)).toBe(a + b)	
 // }
 
+const sum = (a, b) => a + b
 const check_sum = (a, b) => a + b 
 
-// Прогоняем функцию по циклу несколько раз, передавая функцию, функцию проверки,
+
+//ЧТО ДЕЛАЕТ Я хочу проверить любую функцию с любым числом
+// аргументов сразу много раз. 
+
+//КАК ДЕЛАЕТ Прогоняем функцию по циклу несколько раз, передавая функцию, функцию проверки,
 //функцию для изменения аргументов, массив аргументов, количество повторов
 const repeatCheck = (func, checkfunc, modfunc, arguments, rep) => {
 	
